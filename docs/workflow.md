@@ -24,4 +24,5 @@
 
 ::: danger Note
 - High poly object(s) must have a material assigned.
+- The material must have a `Principled BSDF` shader.
 :::

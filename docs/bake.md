@@ -7,7 +7,7 @@ Output path for baked maps.
 - `Bake` operator will get disabled if `Groups`, `High Poly`, `Low Poly` or `Objects` and `Maps` are not available.
 :::
 
-### Folder
+### Sub Folder
 Create a sub folder for baked maps.
 ::: warning
 - `Bake_Group` name will be the name for the sub folder.

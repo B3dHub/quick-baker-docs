@@ -7,6 +7,7 @@ Bake Group is the starting point for the addon to work.
 <p><img :src="$withBase('/img/bake_group_added.png')" alt='' /></p>
 
 - Create a new bake group from selected objects by holding `SHIFT` and pressing `+` operator.
+- Create a high to low poly bake group from selected objects by holding `CTRL` and pressing `+` operator.
 
 ::: warning
 - High poly objects should have `_high` suffix.

@@ -10,6 +10,11 @@
 
 - Suffix `Albedo`
 
+### Alpha
+<p><img :src="$withBase('/img/alpha.png')" alt='' /></p>
+
+- Suffix `Alpha`
+
 ### AO
 <p><img :src="$withBase('/img/ao.png')" alt='' /></p>
 
@@ -36,6 +41,14 @@
 
 - Suffix `Material ID`
 
+- To bake material id map, it requires vertex color or color attribute named `VertexColor`.
+  - Go to edit mode.
+  - `Vertex Color` panel will appear.
+  <p><img :src="$withBase('/img/vertex_color.png')" alt='' /></p>
+  - Select `Verts` or `Faces` to assign color.
+  - Click the paint icon to assign color.
+
+
 ### Normal
 <p><img :src="$withBase('/img/normal_tangent.png')" alt='' /></p>
 
@@ -48,10 +61,10 @@
 
 - Suffix `Roughness`
 
-### Combined
+<!-- ### Combined
 <p><img :src="$withBase('/img/combined.png')" alt='' /></p>
 
-- Suffix `First letter of the RGBA maps` e.g. `Bake_Group_MRAC`
+- Suffix `First letter of the RGBA maps` e.g. `Bake_Group_MRAC` -->
 
 ## Preset
 <p><img :src="$withBase('/img/map_preset.png')" alt='' /></p>
