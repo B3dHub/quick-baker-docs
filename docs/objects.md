@@ -1,11 +1,18 @@
 # Objects
-<p><img :src="$withBase('/img/bake_group_objects.png')" alt='' /></p>
+<p><img :src="$withBase('/img/object.png')" alt='' /></p>
 
 ## Add
-- Add a new object to the active `Bake_Group` by pressing the `+` operator.
-<p><img :src="$withBase('/img/objects_added.png')" alt='' /></p>
-- Add selected objects to the active `Bake_Group` by holding `SHIFT` and pressing `+` operator.
+Add a new object to the active `BakeGroup` by pressing the `+` operator.
+- Select the object(s).
+<p><img :src="$withBase('/img/object_add.png')" alt='' /></p>
+
+Add selected objects to the active `BakeGroup` by holding `SHIFT` and pressing `+` operator.
+<p><img :src="$withBase('/img/object_add_all.png')" alt='' /></p>
+<p><img :src="$withBase('/gif/shift_object.gif')" alt='' /></p>
 
 ## Remove
-- Remove the object by pressing the `-` operator.
-- Remove all the objects by holding `SHIFT` and pressing `-` operator.
+Remove the object by pressing the `-` operator.
+<p><img :src="$withBase('/img/object_remove.png')" alt='' /></p>
+
+Remove all the objects by holding `SHIFT` and pressing `-` operator.
+<p><img :src="$withBase('/img/object_remove_all.png')" alt='' /></p>

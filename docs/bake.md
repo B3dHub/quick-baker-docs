@@ -1,45 +1,43 @@
 # Bake
-<p><img :src="$withBase('/img/bake_enable.png')" alt='' /></p>
+<p><img :src="$withBase('/img/bake.png')" alt='' /></p>
 
-### Path
-Output path for baked maps.
+## Path
+
+### Add
+Add path by pressing the `+` operator.
+<p><img :src="$withBase('/img/folder_add.png')" alt='' /></p>
+
+### Rename
+
+Rename the active `Path` by double chick on it.
+<p><img :src="$withBase('/img/folder_rename.png')" alt='' /></p>
+
+### Load
+Load child folder from the path by pressing `Load` operator.
+<p><img :src="$withBase('/img/folder_load.png')" alt='' /></p>
+
+### Remove
+Remove the active `Path` by pressing the `-` operator.
+<p><img :src="$withBase('/img/folder_remove.png')" alt='' /></p>
+
+Remove all the paths by holding `SHIFT` and pressing `-` operator.
+<p><img :src="$withBase('/img/folder_remove_all.png')" alt='' /></p>
+
+## UDIM
+Auto UDIM bake based on UV grid.
+<p><img :src="$withBase('/gif/udim_bake.gif')" alt='' /></p>
+
+## Node
+Bake the selected shader node in node editor.
+<p><img :src="$withBase('/img/node_bake.png')" alt='' /></p>
+<p><img :src="$withBase('/gif/node_bake.gif')" alt='' /></p>
+
+Replace selected node with baked result by holding `SHIFT` and pressing `Bake` operator.
+<p><img :src="$withBase('/img/node_bake_replace.png')" alt='' /></p>
+<p><img :src="$withBase('/gif/node_bake_shift.gif')" alt='' /></p>
+
+
 ::: warning
 - `Bake` operator will get disabled if `Groups`, `High Poly`, `Low Poly` or `Objects` and `Maps` are not available.
+- `BakeGroup` name will be the name for the sub folder.
 :::
-
-### Sub Folder
-Create a sub folder for baked maps.
-::: warning
-- `Bake_Group` name will be the name for the sub folder.
-:::
-
-### Size
-Texture Size.
-- Enum `['512', '1024', '2048', '4096', '8192']`
-- Default `1024`
-
-### Format
-File format to save the rendered images as.
-- Enum `['PNG', 'JPEG', 'Targa', 'TIFF', 'OpenEXR', 'WebP']`
-- Default `PNG`
-
-### Color Depth
-Bit depth per channels.
-- Enum `['8', '16', '32']`
-- Default `8`
-
-### Compression
-Amount of time to determine best compression: 0 = no compression with fast file output, 100 = maximum lossless compression with show file output.
-- Slider `0 - 100` %
-- Default `15` %
-
-### Quality
-Quality for image formats that support lossy compression.
-- Slider `0 - 100` %
-- Default `90` %
-
-### Margin
-Extends the baked results as a post process filter.
-- Slider `0 - ∞` px
-- Soft max `64` px
-- Default `8` px

@@ -1,48 +1,54 @@
-const { description, repository } = require('../../package')
+const { description, repository } = require("../../package");
+import { defaultTheme } from "vuepress";
 
-module.exports = {
-  base: '/quick-baker-docs/',
-  title: 'Quick Baker',
+export default {
+  base: "/quick-baker-docs/",
+  title: "Quick Baker",
   description: description,
   head: [
-    ['link', { rel: 'icon', href: '/img/UN_32.png' }],
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ["link", { rel: "icon", href: "/img/UN_32.png" }],
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
 
-  themeConfig: {
-    repo: '',
-    docsDir: 'docs',
-    editLinks: false,
-    editLinkText: 'Edit on Github',
+  theme: defaultTheme({
+    logo: "/img/QBAKER_150.png",
+    docsRepo: "https://github.com/B3dHub/quick-baker-docs",
+    docsBranch: "main",
+    docsDir: "docs",
+    editLink: false,
+    editLinkText: "Edit on Github",
     lastUpdated: true,
-    nav: [
+    // Navbar
+    navbar: [
       {
-        text: 'Discord',
-        link: 'https://discord.gg/sdnHHZpWbT',
+        text: "Discord",
+        link: "https://discord.gg/sdnHHZpWbT",
       },
     ],
+    // Sidebar
+    sidebarDepth: 1,
     sidebar: {
-      '/': [
+      "/": [
         {
-          title: '',
+          title: "",
           collapsable: false,
           children: [
-            'quickstart',
-            'workflow',
-            'bake-groups',
-            'groups',
-            'objects',
-            'maps',
-            'bake',
-          ]
+            "quickstart",
+            "workflow",
+            "bake-groups",
+            "groups",
+            "objects",
+            "maps",
+            "bake",
+          ],
         },
       ],
-    }
-  },
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}
+    },
+  }),
+  plugins: ["@vuepress/plugin-search"],
+};

@@ -4,7 +4,7 @@ This quick start guide will help you get up and running with Quick Baker.
 
 ## Requirements
 
-- Blender 3.0.0 or above.
+- Blender 3.3.0 or above.
 - Download the latest addon from
   - [Blender Market](https://blendermarket.com/products/quick-baker)
   - [Gumroad](https://b3dhub.gumroad.com/l/quick-baker)
